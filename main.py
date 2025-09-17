@@ -1,5 +1,6 @@
 from nicegui import ui, app
-from sections import hero, welcome
+from sections import about, home, welcome, menu, menu_detail, contact, gallery
+#from components import navbar, footer
 
 # Expose the assets folder to the nicegui server
 app.add_static_files("/assets", "assets")
@@ -13,7 +14,12 @@ ui.add_head_html('''
 ''')
 ui.add_head_html('<link rel="stylesheet" href="/assets/reset.css" />')
 
-hero.render()
 welcome.render()
+home.render()
+menu.render()
+menu_detail.render()
+about.render()
+gallery.render()
+contact.render()
 
 ui.run(port=8000)

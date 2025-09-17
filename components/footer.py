@@ -1,16 +1,16 @@
 from nicegui import ui
 
-ui.add_head_html('<script src="https://kit.fotawesome.com/ccba89e5d4.js" crossorigin="anonymous"></script>') 
+ui.add_head_html('<script src="https://kit.fontawesome.com/ccba89e5d4.js" crossorigin="anonymous"></script>') 
 
 def show_footer():
-    with ui.element("div").classes("w-full bg-deeppurple items-center justify-center px-10 py-5"):
+    with ui.element("div").classes("w-full bg-orange items-center justify-center px-10 py-5"):
         with ui.row().classes("items-center justify-center text-4xl font-bold mb-4"):
             ui.label("Akua's").classes("text-white")
             ui.label("Eatries").classes("text-purple-400")
 
         with ui.row().classes("items-center justify-center text-white mb-8"):
-            ui.input(placeholder="Enter your mail").props("outlined").classes("bg-white w-64")
-            ui.button("Subscribe").props("color=deep-purple-7").classes("px-20 py-4")
+            ui.input(placeholder="Enter your mail").props("outlined").classes("bg-orange w-64")
+            ui.button("Subscribe").props("color=orange-7").classes("px-20 py-4")
 
         ui.html("<hr>").classes("mt-16")
 
